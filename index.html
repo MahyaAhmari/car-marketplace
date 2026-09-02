@@ -5,9 +5,256 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>car marketplace</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="./output.css" rel="stylesheet">
+    <link href="src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
-<body>
-    
+<body class="bg-[#181818]">
+                                    <!-- header -->
+    <header class="flex items-center justify-center py-4 px-20 gap-3">
+        <img src="assets/images/logo.445e7b59 1.png" alt="logo" class="w-15">
+
+        <section class="w-full flex flex-col">
+            <div  class="w-full flex justify-between">
+                <div  class="flex items-center">
+                    <i class="fa-solid fa-location-dot text-gray-400 text-sm"></i>
+                    <p class="text-gray-400 text-sm">Yaroslavskoye Shosse, vl. 2V, str. 3 (MKAD, 95th km)</p>
+                </div>
+                <div class="flex items-center gap-5">
+                    <a href="#" class="text-white text-sm"><i class="fa-solid fa-gear text-[#FF9549] cursor-pointer"></i> Book a service</a>
+                    <a href="#" class="text-white text-sm"><i class="fa-solid fa-gauge-high text-[#FF9549]  cursor-pointer"></i> Test drive</a>
+                </div>
+            </div>
+
+            <hr class="text-gray-600 my-3">
+
+            <div class="w-full flex items-center justify-between">
+                <div class="flex items-center">
+                    <h2 class="text-white text-2xl font-bold">Avtorus TANK</h2>
+                    <hr class="text-gray-500 vertical-line w-6">
+                    <p class="text-sm text-white">Official dealer</p>
+                </div>
+
+                <div class="flex items-center gap-5">
+                    <div dir="rtl">
+                        <p class="text-white">999-99-99 (999) +7</p>
+                        <p class="after:content-[''] after:inline-block after:bg-lime-400 after:w-1 after:h-1 after:rounded-full flex items-center text-gray-400 text-xs gap-1">We are here for you</p>
+                    </div>
+
+                    <button class="bg-[#FF9549] py-2 px-3 rounded-lg hover:bg-[#FE8630] transition-all duration-500 cursor-pointer"><i class="fa-solid fa-phone"></i> Request a callback</button>
+                </div>
+            </div>
+        </section>
+    </header>
+
+                                <!-- site's banner -->
+    <section class="relative">
+        <img src="assets/images/image-285.png" alt="banner">
+        <div class="absolute inset-y-0 my-auto h-44 left-30">
+            <p class="text-white text-lg">We’ll beat any offer</p>
+            <h1 class="text-white font-bold text-5xl">TANK 500</h1>
+            <p class="text-white text-lg mt-2">Only 5 units in stock!</p>
+            <button class="bg-[#FF9549] py-2 px-3 rounded-lg hover:bg-[#FE8630] transition-all duration-500 cursor-pointer mt-4">Request a callback <i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </section>
+
+                                <!-- description -->
+    <section class="flex flex-col justify-center items-center pb-20">
+        <div class="flex items-center justify-between bg-[#252C2C] w-10/12 mt-5 p-5 rounded-lg">
+            <p class="text-white text-3xl font-bold">Limited time <br>offer ends:</p>
+
+            <div class="flex items-center gap-5">
+                <div class="relative w-24 h-24 rounded-full bg-[conic-gradient(#FF9549_0%_90%,#444_90%_100%)] flex flex-col items-center justify-center text-white">
+                    <div class="absolute w-22 h-22 bg-[#252C2C] rounded-full z-0"></div>
+                    <div class="z-10 text-3xl font-bold">03</div>
+                    <div class="z-10 ">Days</div>
+                </div>
+            </div>
+            <span class="text-white text-5xl font-bold">:</span>
+
+            <div class="flex items-center gap-5">
+                <div class="relative w-24 h-24 rounded-full bg-[conic-gradient(#FF9549_0%_50%,#444_50%_100%)] flex flex-col items-center justify-center text-white">
+                    <div class="absolute w-22 h-22 bg-[#252C2C] rounded-full z-0"></div>
+                    <div class="z-10 text-3xl font-bold">06</div>
+                    <div class="z-10 ">Hours</div>
+                </div>
+            </div>
+            <span class="text-white text-5xl font-bold">:</span>
+
+            <div class="flex items-center gap-5">
+                <div class="relative w-24 h-24 rounded-full bg-[conic-gradient(#FF9549_0%_20%,#444_20%_100%)] flex flex-col items-center justify-center text-white">
+                    <div class="absolute w-22 h-22 bg-[#252C2C] rounded-full z-0"></div>
+                    <div class="z-10 text-3xl font-bold">14</div>
+                    <div class="z-10 ">Minutes</div>
+                </div>
+            </div>
+            <span class="text-white text-5xl font-bold">:</span>
+
+            <div class="flex items-center gap-5">
+                <div class="relative w-24 h-24 rounded-full bg-[conic-gradient(#FF9549_0%_90%,#444_90%_100%)] flex flex-col items-center justify-center text-white">
+                    <div class="absolute w-22 h-22 bg-[#252C2C] rounded-full z-0"></div>
+                    <div class="z-10 text-3xl font-bold">55</div>
+                    <div class="z-10 ">Seconds</div>
+                </div>
+            </div>
+
+
+            <button class="bg-[#FF9549] py-2 px-3 rounded-lg hover:bg-[#FE8630] transition-all duration-500 cursor-pointer mt-4">Request a callback <i class="fa-solid fa-angle-right"></i></button>
+        </div>
+
+        <div class="flex items-center justify-center mt-10 gap-5 mb-20">
+            <div class="border border-white rounded-lg p-4 flex gap-5 w-[30%]">
+                <i class="fa-solid fa-award text-white text-2xl"></i>
+                <div>
+                    <h4 class="text-white text-lg font-bold">Official Dealer</h4>
+                    <p class="text-white mr-5">We guarantee high quality <br>service.</p>
+                </div>
+            </div>
+            
+            <div class="border border-white rounded-lg p-4 flex gap-5 w-[30%]">
+                <i class="fa-solid fa-clock-rotate-left text-white text-2xl"></i>
+                <div>
+                    <h4 class="text-white text-lg font-bold">Buy your car in one day</h4>
+                    <p class="text-white mr-5">Convenient purchasing process, including preparation of all documents.</p>
+                </div>
+            </div>
+            
+            <div class="border border-white rounded-lg p-4 flex gap-5 w-[30%]">
+                <i class="fa-solid fa-clipboard-check text-white text-2xl"></i>
+                <div>
+                    <h4 class="text-white text-lg font-bold">All Equipments in stock</h4>
+                    <p class="text-white mr-5">A wide range of configurations, with a full package of documents</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-white text-5xl font-bold text-center">Book your car today and get an extra <br>₽100,000 in savings</p>
+
+        <div class="flex mt-10 gap-10">
+            <div class="flex flex-col items-center justify-center">
+                <img src="assets/images/image 286.png" alt="red car">
+                <span class="text-white">TANK 300</span>
+            </div>
+
+            <div class="flex flex-col items-center justify-center">
+                <img src="assets/images/image 286 (1).png" alt="red car">
+                <span class="text-white">TANK 500</span>
+            </div>
+        </div>
+    </section>
+
+                                    <!-- description of TANK 300 -->
+    <section class="bg-[#1C2121] p-20">
+        <div class="flex items-center">
+            <div class="flex flex-col items-start gap-2">
+                <span class="text-[#FF9549]">Only in AVTORUS!</span>
+                <h3 class="text-white text-4xl font-bold">TANK 300</h3>
+                <p class="text-white text-3xl">Trade-In benefit up to 450,000 ₽</p>
+                <span class="bg-[#FF2B00] text-white rounded-lg px-3 py-0.5"><i class="fa-solid fa-triangle-exclamation"></i> Limited offer! <i class="fa-solid fa-triangle-exclamation"></i></span>
+                <button class="cursor-pointer hover:bg-[#FE8630] transition-all duration-500 w-full rounded-lg text-center py-2 bg-[#FF9549] mt-5">Request a call <i class="fa-solid fa-angle-right"></i></button>
+                <button class="cursor-pointer hover:bg-[#181818] transition-all duration-500 w-full rounded-lg text-center py-2 border border-[#FF9549] text-white">Test drive <i class="fa-solid fa-angle-right"></i></button>
+                <button class="cursor-pointer hover:bg-[#181818] transition-all duration-500 w-full rounded-lg text-center py-2 border border-[#FF9549] text-white">Calculate a loan <i class="fa-solid fa-angle-right"></i></button>
+            </div>
+
+            <div class="relative">
+                <img src="assets/images/image 288.png" alt="TANK 300">
+                <div class="absolute top-0 right-10 bg-[#FF9549] rounded-lg p-3 text-center leading-none rotate-z-12">5 cars left <br>at a special <br>price</div>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <span class="bg-[#EF2929] rounded-full w-5 h-5 inline-block relative"><i class="fa-solid fa-check text-white text-xs absolute top-1 right-1"></i></span>
+                <span class="bg-[#DF4C30] rounded-full w-5 h-5 inline-block"></span>
+                <span class="bg-[#C6C9CE] rounded-full w-5 h-5 inline-block"></span>
+                <span class="bg-[#212329] border border-[#939697] rounded-full w-5 h-5 inline-block"></span>
+                <span class="bg-[#E6E7E8] rounded-full w-5 h-5 inline-block"></span>
+            </div>
+        </div>
+
+        <div class="flex gap-5 mt-5 justify-stretch">
+            <div class="bg-[#181818] rounded-lg text-white p-3 flex items-center gap-4 w-full">
+                <i class="fa-solid fa-clipboard-check text-[#FF9549] text-2xl"></i>
+                <p>Cars in stock with PTS</p>
+            </div>
+            
+            <div class="bg-[#181818] rounded-lg text-white p-3 flex items-center gap-4 w-full">
+                <i class="fa-solid fa-shield text-[#FF9549] text-2xl"></i>
+                <p>Service support up to 5 years / 150,000 km</p>
+            </div>
+
+            <div class="bg-[#181818] rounded-lg text-white p-3 flex items-center gap-4 w-full">
+                <i class="fa-solid fa-tag text-[#FF9549] text-2xl"></i>
+                <p>We will improve any offer</p>
+            </div>
+
+            <div class="bg-[#181818] rounded-lg text-white p-3 flex items-center gap-4 w-full">
+                <i class="fa-solid fa-percent text-[#FF9549] text-2xl"></i>
+                <p>Credit 0.01%</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-5 gap-3 mt-5 items-start">
+            <img class="rounded-2xl w-full" src="assets/images/image 285 (1).png" alt="">
+            <img class="rounded-2xl w-full" src="assets/images/image 286 (2).png" alt="">
+            <img class="rounded-2xl w-full" src="assets/images/image 287.png" alt="">
+            <img class="rounded-2xl w-full" src="assets/images/image 288 (1).png" alt="">
+            <img class="rounded-2xl w-full" src="assets/images/image 289.png" alt="">
+        </div>
+    </section>
+
+                                    <!-- description of TANK 500 -->
+    <section class="bg-[#252C2C] p-20">
+        <div class="flex items-center">
+            <div class="flex flex-col gap-2">
+                <span class="bg-[#B0A798] rounded-full w-5 h-5 inline-block relative"><i class="fa-solid fa-check text-white text-xs absolute top-1 right-1"></i></span>
+                <span class="bg-[#E6E7E8] rounded-full w-5 h-5 inline-block"></span>
+                <span class="bg-[#A2A4AB] rounded-full w-5 h-5 inline-block"></span>
+                <span class="bg-[#212329] border border-[#939697] rounded-full w-5 h-5 inline-block"></span>
+            </div>        
+
+            <div class="relative">
+                <img src="assets/images/image 288 (2).png" alt="TANK 300">
+                <div class="absolute top-0 right-10 bg-[#FF9549] rounded-lg p-3 text-center leading-none rotate-z-12">5 cars left <br>at a special <br>price</div>
+            </div>
+
+            <div class="flex flex-col items-start gap-2">
+                <span class="text-[#FF9549]">Only in AVTORUS!</span>
+                <h3 class="text-white text-4xl font-bold">TANK 300</h3>
+                <p class="text-white text-3xl">Benefit up to 700,000&nbsp;₽</p>
+                <span class="bg-[#FF2B00] text-white rounded-lg px-3 py-0.5"><i class="fa-solid fa-triangle-exclamation"></i> Limited offer! <i class="fa-solid fa-triangle-exclamation"></i></span>
+                <button class="cursor-pointer hover:bg-[#FE8630] transition-all duration-500 w-full rounded-lg text-center py-2 bg-[#FF9549] mt-5">Request a call <i class="fa-solid fa-angle-right"></i></button>
+                <button class="cursor-pointer hover:bg-[#181818] transition-all duration-500 w-full rounded-lg text-center py-2 border border-[#FF9549] text-white">Test drive <i class="fa-solid fa-angle-right"></i></button>
+                <button class="cursor-pointer hover:bg-[#181818] transition-all duration-500 w-full rounded-lg text-center py-2 border border-[#FF9549] text-white">Calculate a loan <i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+
+        <div class="flex gap-5 mt-5 justify-stretch">
+            <div class="bg-[#181818] rounded-lg text-white p-3 flex items-center gap-4 w-full">
+                <i class="fa-solid fa-clipboard-check text-[#FF9549] text-2xl"></i>
+                <p>Cars in stock with PTS</p>
+            </div>
+            
+            <div class="bg-[#181818] rounded-lg text-white p-3 flex items-center gap-4 w-full">
+                <i class="fa-solid fa-shield text-[#FF9549] text-2xl"></i>
+                <p>Service support up to 5 years / 150,000 km</p>
+            </div>
+
+            <div class="bg-[#181818] rounded-lg text-white p-3 flex items-center gap-4 w-full">
+                <i class="fa-solid fa-tag text-[#FF9549] text-2xl"></i>
+                <p>We will improve any offer</p>
+            </div>
+
+            <div class="bg-[#181818] rounded-lg text-white p-3 flex items-center gap-4 w-full">
+                <i class="fa-solid fa-percent text-[#FF9549] text-2xl"></i>
+                <p>Credit 0.01%</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-5 gap-3 mt-5 items-start">
+            <img class="rounded-2xl w-full" src="assets/images/image 285 (2).png" alt="">
+            <img class="rounded-2xl w-full" src="assets/images/image 286 (3).png" alt="">
+            <img class="rounded-2xl w-full" src="assets/images/image 287 (1).png" alt="">
+            <img class="rounded-2xl w-full" src="assets/images/image 288 (3).png" alt="">
+            <img class="rounded-2xl w-full" src="assets/images/image 289 (1).png" alt="">
+        </div>
+    </section>
 </body>
 </html>
