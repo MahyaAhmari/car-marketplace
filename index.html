@@ -10,7 +10,7 @@
 </head>
 <body class="bg-[#181818]">
                                     <!-- header -->
-    <header class="flex items-center justify-center py-4 px-20 gap-3">
+    <header class="md:flex items-center justify-center py-4 px-20 gap-3 hidden">
         <img src="assets/images/logo.445e7b59 1.png" alt="logo" class="w-15">
 
         <section class="w-full flex flex-col">
@@ -44,6 +44,17 @@
                 </div>
             </div>
         </section>
+    </header>
+
+                                <!-- mobile header -->
+    <header class="flex gap-4 items-center md:hidden p-5">
+        <img src="assets/images/logo.445e7b59 1.png" alt="logo" class="w-10">
+        <div>
+            <p class="text-white">AVTORUS TANK Losiny Ostrov</p>
+            <span class="text-[#939697]">Official dealer</span>
+        </div>
+        <a href="#callSection"><i class="fa-solid fa-phone-volume text-white"></i></a>
+        <i class="fa-solid fa-bars text-white"></i>
     </header>
 
                             <!-- Request a callback modal -->
@@ -86,7 +97,7 @@
                                 <!-- site's banner -->
     <section class="relative">
         <img src="assets/images/image-285.png" alt="banner">
-        <div class="absolute inset-y-0 my-auto h-44 left-30">
+        <div class="md:absolute md:inset-y-0 my-auto h-44 md:left-30 ml-5 mt-5">
             <p class="text-white text-lg">We’ll beat any offer</p>
             <h1 class="text-white font-bold text-5xl">TANK 500</h1>
             <p class="text-white text-lg mt-2">Only 5 units in stock!</p>
@@ -96,41 +107,43 @@
 
                                 <!-- description -->
     <section class="flex flex-col justify-center items-center pb-20">
-        <div class="flex items-center justify-between bg-[#252C2C] w-10/12 mt-5 p-5 rounded-lg">
-            <p class="text-white text-3xl font-bold">Limited time <br>offer ends:</p>
+        <div class="flex flex-col md:flex-row items-center justify-between bg-[#252C2C] w-10/12 mt-5 p-5 rounded-lg">
+            <p class="text-white text-3xl font-bold">Limited time <br class="md:block hidden">offer ends:</p>
 
-            <div class="flex items-center gap-5">
-                <div class="relative w-24 h-24 rounded-full bg-[conic-gradient(#FF9549_0%_90%,#444_90%_100%)] flex flex-col items-center justify-center text-white">
-                    <div class="absolute w-22 h-22 bg-[#252C2C] rounded-full z-0"></div>
-                    <div class="z-10 text-3xl font-bold">03</div>
-                    <div class="z-10 ">Days</div>
+            <div class="flex items-center">
+                <div class="flex items-center gap-5">
+                    <div class="relative w-16 md:w-24 h-16 md:h-24 rounded-full bg-[conic-gradient(#FF9549_0%_90%,#444_90%_100%)] flex flex-col items-center justify-center text-white">
+                        <div class="absolute w-14 md:w-22 h-14 md:h-22 bg-[#252C2C] rounded-full z-0"></div>
+                        <div class="z-10 text-2xl md:text-3xl font-bold">03</div>
+                        <div class="z-10 text-xs">Days</div>
+                    </div>
                 </div>
-            </div>
-            <span class="text-white text-5xl font-bold">:</span>
-
-            <div class="flex items-center gap-5">
-                <div class="relative w-24 h-24 rounded-full bg-[conic-gradient(#FF9549_0%_50%,#444_50%_100%)] flex flex-col items-center justify-center text-white">
-                    <div class="absolute w-22 h-22 bg-[#252C2C] rounded-full z-0"></div>
-                    <div class="z-10 text-3xl font-bold">06</div>
-                    <div class="z-10 ">Hours</div>
+                <span class="text-white text-5xl font-bold">:</span>
+    
+                <div class="flex items-center gap-5">
+                    <div class="relative w-16 md:w-24 h-16 md:h-24 rounded-full bg-[conic-gradient(#FF9549_0%_50%,#444_50%_100%)] flex flex-col items-center justify-center text-white">
+                        <div class="absolute w-14 md:w-22 h-14 md:h-22 bg-[#252C2C] rounded-full z-0"></div>
+                        <div class="z-10 text-2xl md:text-3xl font-bold">06</div>
+                        <div class="z-10 text-xs">Hours</div>
+                    </div>
                 </div>
-            </div>
-            <span class="text-white text-5xl font-bold">:</span>
-
-            <div class="flex items-center gap-5">
-                <div class="relative w-24 h-24 rounded-full bg-[conic-gradient(#FF9549_0%_20%,#444_20%_100%)] flex flex-col items-center justify-center text-white">
-                    <div class="absolute w-22 h-22 bg-[#252C2C] rounded-full z-0"></div>
-                    <div class="z-10 text-3xl font-bold">14</div>
-                    <div class="z-10 ">Minutes</div>
+                <span class="text-white text-5xl font-bold">:</span>
+    
+                <div class="flex items-center gap-5">
+                    <div class="relative w-16 md:w-24 h-16 md:h-24 rounded-full bg-[conic-gradient(#FF9549_0%_20%,#444_20%_100%)] flex flex-col items-center justify-center text-white">
+                        <div class="absolute w-14 md:w-22 h-14 md:h-22 bg-[#252C2C] rounded-full z-0"></div>
+                        <div class="z-10  text-2xl md:text-3xl font-bold">14</div>
+                        <div class="z-10 text-xs">Minutes</div>
+                    </div>
                 </div>
-            </div>
-            <span class="text-white text-5xl font-bold">:</span>
-
-            <div class="flex items-center gap-5">
-                <div class="relative w-24 h-24 rounded-full bg-[conic-gradient(#FF9549_0%_90%,#444_90%_100%)] flex flex-col items-center justify-center text-white">
-                    <div class="absolute w-22 h-22 bg-[#252C2C] rounded-full z-0"></div>
-                    <div class="z-10 text-3xl font-bold">55</div>
-                    <div class="z-10 ">Seconds</div>
+                <span class="text-white text-5xl font-bold">:</span>
+    
+                <div class="flex items-center gap-5">
+                    <div class="relative w-16 md:w-24 h-16 md:h-24 rounded-full bg-[conic-gradient(#FF9549_0%_90%,#444_90%_100%)] flex flex-col items-center justify-center text-white">
+                        <div class="absolute w-14 md:w-22 h-14 md:h-22 bg-[#252C2C] rounded-full z-0"></div>
+                        <div class="z-10 text-2xl md:text-3xl font-bold">55</div>
+                        <div class="z-10 text-xs">Seconds</div>
+                    </div>
                 </div>
             </div>
 
@@ -138,28 +151,28 @@
             <button class="bg-[#FF9549] py-2 px-3 rounded-lg hover:bg-[#FE8630] transition-all duration-500 cursor-pointer mt-4">Request a callback <i class="fa-solid fa-angle-right"></i></button>
         </div>
 
-        <div class="flex items-center justify-center mt-10 gap-5 mb-20">
-            <div class="border border-white rounded-lg p-4 flex gap-5 w-[30%]">
+        <div class="flex items-stretch justify-center mt-10 gap-5 mb-20 flex-col md:flex-row">
+            <div class="border border-white rounded-lg p-4 flex gap-5 md:w-[30%]">
                 <i class="fa-solid fa-award text-white text-2xl"></i>
                 <div>
                     <h4 class="text-white text-lg font-bold">Official Dealer</h4>
-                    <p class="text-white mr-5">We guarantee high quality <br>service.</p>
+                    <p class="text-white mr-5 md:block hidden">We guarantee high quality <br>service.</p>
                 </div>
             </div>
             
-            <div class="border border-white rounded-lg p-4 flex gap-5 w-[30%]">
+            <div class="border border-white rounded-lg p-4 flex gap-5 md:w-[30%]">
                 <i class="fa-solid fa-clock-rotate-left text-white text-2xl"></i>
                 <div>
                     <h4 class="text-white text-lg font-bold">Buy your car in one day</h4>
-                    <p class="text-white mr-5">Convenient purchasing process, including preparation of all documents.</p>
+                    <p class="text-white mr-5 md:block hidden">Convenient purchasing process, including preparation of all documents.</p>
                 </div>
             </div>
             
-            <div class="border border-white rounded-lg p-4 flex gap-5 w-[30%]">
+            <div class="border border-white rounded-lg p-4 flex gap-5 md:w-[30%]">
                 <i class="fa-solid fa-clipboard-check text-white text-2xl"></i>
                 <div>
                     <h4 class="text-white text-lg font-bold">All Equipments in stock</h4>
-                    <p class="text-white mr-5">A wide range of configurations, with a full package of documents</p>
+                    <p class="text-white mr-5 md:block hidden">A wide range of configurations, with a full package of documents</p>
                 </div>
             </div>
         </div>
@@ -180,24 +193,28 @@
     </section>
 
                                     <!-- description of TANK 300 -->
-    <section class="bg-[#1C2121] p-20">
-        <div class="flex items-center">
+    <section class="bg-[#1C2121] md:p-20 p-5">
+        <div class="md:flex items-center grid grid-cols-1">
             <div class="flex flex-col items-start gap-2">
                 <span class="text-[#FF9549]">Only in AVTORUS!</span>
                 <h3 class="text-white text-4xl font-bold">TANK 300</h3>
                 <p class="text-white text-3xl">Trade-In benefit up to 450,000 ₽</p>
+
                 <span class="bg-[#FF2B00] text-white rounded-lg px-3 py-0.5"><i class="fa-solid fa-triangle-exclamation"></i> Limited offer! <i class="fa-solid fa-triangle-exclamation"></i></span>
+
                 <button class="cursor-pointer hover:bg-[#FE8630] transition-all duration-500 w-full rounded-lg text-center py-2 bg-[#FF9549] mt-5">Request a call <i class="fa-solid fa-angle-right"></i></button>
+
                 <button class="cursor-pointer hover:bg-[#181818] transition-all duration-500 w-full rounded-lg text-center py-2 border border-[#FF9549] text-white">Test drive <i class="fa-solid fa-angle-right"></i></button>
+
                 <button class="cursor-pointer hover:bg-[#181818] transition-all duration-500 w-full rounded-lg text-center py-2 border border-[#FF9549] text-white">Calculate a loan <i class="fa-solid fa-angle-right"></i></button>
             </div>
 
-            <div class="relative">
+            <div class="relative row-start-1">
                 <img src="assets/images/image 288.png" alt="TANK 300">
-                <div class="absolute top-0 right-10 bg-[#FF9549] rounded-lg p-3 text-center leading-none rotate-z-12">5 cars left <br>at a special <br>price</div>
+                <div class="absolute -top-1 md:top-0 right-0 md:right-10 bg-[#FF9549] rounded-lg p-3 text-center leading-none rotate-z-12">5 cars left <br>at a special <br>price</div>
             </div>
 
-            <div class="flex flex-col gap-2">
+            <div class="flex md:flex-col gap-2 my-5 md:my-0 row-start-2">
                 <span class="bg-[#EF2929] rounded-full w-5 h-5 inline-block relative"><i class="fa-solid fa-check text-white text-xs absolute top-1 right-1"></i></span>
                 <span class="bg-[#DF4C30] rounded-full w-5 h-5 inline-block"></span>
                 <span class="bg-[#C6C9CE] rounded-full w-5 h-5 inline-block"></span>
@@ -206,7 +223,7 @@
             </div>
         </div>
 
-        <div class="flex gap-5 mt-5 justify-stretch">
+        <div class="flex gap-5 mt-5 justify-stretch flex-wrap md:flex-nowrap">
             <div class="bg-[#181818] rounded-lg text-white p-3 flex items-center gap-4 w-full">
                 <i class="fa-solid fa-clipboard-check text-[#FF9549] text-2xl"></i>
                 <p>Cars in stock with PTS</p>
@@ -228,19 +245,19 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-5 gap-3 mt-5 items-start">
-            <img class="rounded-2xl w-full" src="assets/images/image 285 (1).png" alt="">
-            <img class="rounded-2xl w-full" src="assets/images/image 286 (2).png" alt="">
-            <img class="rounded-2xl w-full" src="assets/images/image 287.png" alt="">
-            <img class="rounded-2xl w-full" src="assets/images/image 288 (1).png" alt="">
-            <img class="rounded-2xl w-full" src="assets/images/image 289.png" alt="">
+        <div class="md:grid grid-cols-5 gap-3 mt-5 items-start flex flex-wrap">
+            <img class="rounded-2xl md:w-full w-44" src="assets/images/image 285 (1).png" alt="TANK 300">
+            <img class="rounded-2xl md:w-full w-44" src="assets/images/image 286 (2).png" alt="TANK 300">
+            <img class="rounded-2xl md:w-full w-44" src="assets/images/image 287.png" alt="TANK 300">
+            <img class="rounded-2xl md:w-full w-44" src="assets/images/image 288 (1).png" alt="TANK 300">
+            <img class="rounded-2xl md:w-full w-44" src="assets/images/image 289.png" alt="TANK 300">
         </div>
     </section>
 
                                     <!-- description of TANK 500 -->
-    <section class="bg-[#252C2C] p-20">
-        <div class="flex items-center">
-            <div class="flex flex-col gap-2">
+    <section class="bg-[#252C2C] md:p-20 p-5">
+        <div class="md:flex items-center grid grid-cols-1">
+            <div class="flex md:flex-col gap-2 row-start-2 my-5 md:my-0">
                 <span class="bg-[#B0A798] rounded-full w-5 h-5 inline-block relative"><i class="fa-solid fa-check text-white text-xs absolute top-1 right-1"></i></span>
                 <span class="bg-[#E6E7E8] rounded-full w-5 h-5 inline-block"></span>
                 <span class="bg-[#A2A4AB] rounded-full w-5 h-5 inline-block"></span>
@@ -249,7 +266,7 @@
 
             <div class="relative">
                 <img src="assets/images/image 288 (2).png" alt="TANK 300">
-                <div class="absolute top-0 right-10 bg-[#FF9549] rounded-lg p-3 text-center leading-none rotate-z-12">5 cars left <br>at a special <br>price</div>
+                <div class="absolute -top-1 md:top-0 right-0 md:right-10 bg-[#FF9549] rounded-lg p-3 text-center leading-none rotate-z-12">5 cars left <br>at a special <br>price</div>
             </div>
 
             <div class="flex flex-col items-start gap-2">
@@ -263,7 +280,7 @@
             </div>
         </div>
 
-        <div class="flex gap-5 mt-5 justify-stretch">
+        <div class="flex gap-5 mt-5 justify-stretch flex-wrap md:flex-nowrap">
             <div class="bg-[#181818] rounded-lg text-white p-3 flex items-center gap-4 w-full">
                 <i class="fa-solid fa-clipboard-check text-[#FF9549] text-2xl"></i>
                 <p>Cars in stock with PTS</p>
@@ -285,20 +302,20 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-5 gap-3 mt-5 items-start">
-            <img class="rounded-2xl w-full" src="assets/images/image 285 (2).png" alt="">
-            <img class="rounded-2xl w-full" src="assets/images/image 286 (3).png" alt="">
-            <img class="rounded-2xl w-full" src="assets/images/image 287 (1).png" alt="">
-            <img class="rounded-2xl w-full" src="assets/images/image 288 (3).png" alt="">
-            <img class="rounded-2xl w-full" src="assets/images/image 289 (1).png" alt="">
+        <div class="md:grid grid-cols-5 gap-3 mt-5 items-start flex flex-wrap">
+            <img class="rounded-2xl md:w-full w-44" src="assets/images/image 285 (2).png" alt="">
+            <img class="rounded-2xl md:w-full w-44" src="assets/images/image 286 (3).png" alt="">
+            <img class="rounded-2xl md:w-full w-44" src="assets/images/image 287 (1).png" alt="">
+            <img class="rounded-2xl md:w-full w-44" src="assets/images/image 288 (3).png" alt="">
+            <img class="rounded-2xl md:w-full w-44" src="assets/images/image 289 (1).png" alt="">
         </div>
     </section>
 
                                         <!-- products List -->
-    <section class="p-20 flex flex-col items-center">
+    <section class="md:p-20 p-5 flex flex-col items-center">
         <strong class="text-white text-5xl">CHOOSE A PACKAGE</strong>
 
-        <div class="flex items-center w-full gap-5 mt-8">
+        <div class="flex items-center w-full gap-5 mt-8 md:flex-row flex-col">
             <div class="flex flex-col items-start w-full">
                 <label for="" class="text-[#939697]">Model</label>
                 <select class="bg-[#252C2C] border border-[#939697] rounded w-full p-2 text-[#939697]">
@@ -322,10 +339,10 @@
         </div>
 
         <div class="flex flex-col mt-7 w-full gap-5">
-            <div class="border border-[#939697] rounded-lg flex p-5">
-                <img src="assets/images/image 288 (4).png" alt="TANK 300" class="w-1/3">
+            <div class="border border-[#939697] rounded-lg flex p-5 md:flex-row flex-col">
+                <img src="assets/images/image 288 (4).png" alt="TANK 300" class="md:w-1/3">
 
-                <div class="w-1/3 flex flex-col">
+                <div class="md:w-1/3 flex flex-col">
                     <h5 class="text-3xl font-bold text-white">TANK 300</h5>
                     <p class="text-[#939697] mb-7">2.0L Gasoline, AWD, Automatic</p>
                     <del class="text-white text-2xl font-bold">3,649,000 ₽</del>
@@ -333,15 +350,15 @@
                     <span class="text-white w-full"><i class="fa-solid fa-gift text-[#FF9549]"></i>Free ceramic coating!</span>
                 </div>
 
-                <div class="flex flex-col w-1/3 gap-5">
+                <div class="flex flex-col md:w-1/3 gap-5 mt-5 md:mt-0">
                     <button class="bg-[#FF9549] rounded-lg py-3 hover:bg-[#FE8630] transition-all duration-500 cursor-pointer">Get Offer <i class="fa-solid fa-angle-right"></i></button>
                     <button class="rounded-lg py-3 border border-[#FF9549] text-white hover:bg-[#252C2C] transition-all duration-500 cursor-pointer">Test Drive <i class="fa-solid fa-angle-right text-white"></i></button>
                 </div>
             </div>
-            <div class="border border-[#939697] rounded-lg flex p-5">
-                <img src="assets/images/image 288 (4).png" alt="TANK 300" class="w-1/3">
+            <div class="border border-[#939697] rounded-lg flex p-5 md:flex-row flex-col">
+                <img src="assets/images/image 288 (4).png" alt="TANK 300" class="md:w-1/3">
 
-                <div class="w-1/3 flex flex-col">
+                <div class="md:w-1/3 flex flex-col">
                     <h5 class="text-3xl font-bold text-white">TANK 300</h5>
                     <p class="text-[#939697] mb-7">2.0L Gasoline, AWD, Automatic</p>
                     <del class="text-white text-2xl font-bold">3,649,000 ₽</del>
@@ -349,15 +366,15 @@
                     <span class="text-white w-full"><i class="fa-solid fa-gift text-[#FF9549]"></i>Free ceramic coating!</span>
                 </div>
 
-                <div class="flex flex-col w-1/3 gap-5">
+                <div class="flex flex-col md:w-1/3 gap-5 mt-5 md:mt-0">
                     <button class="bg-[#FF9549] rounded-lg py-3 hover:bg-[#FE8630] transition-all duration-500 cursor-pointer">Get Offer <i class="fa-solid fa-angle-right"></i></button>
                     <button class="rounded-lg py-3 border border-[#FF9549] text-white hover:bg-[#252C2C] transition-all duration-500 cursor-pointer">Test Drive <i class="fa-solid fa-angle-right text-white"></i></button>
                 </div>
             </div>
-            <div class="border border-[#939697] rounded-lg flex p-5">
-                <img src="assets/images/image 288 (4).png" alt="TANK 300" class="w-1/3">
+            <div class="border border-[#939697] rounded-lg flex p-5 md:flex-row flex-col">
+                <img src="assets/images/image 288 (4).png" alt="TANK 300" class="md:w-1/3">
 
-                <div class="w-1/3 flex flex-col">
+                <div class="md:w-1/3 flex flex-col">
                     <h5 class="text-3xl font-bold text-white">TANK 300</h5>
                     <p class="text-[#939697] mb-7">2.0L Gasoline, AWD, Automatic</p>
                     <del class="text-white text-2xl font-bold">3,649,000 ₽</del>
@@ -365,7 +382,7 @@
                     <span class="text-white w-full"><i class="fa-solid fa-gift text-[#FF9549]"></i>Free ceramic coating!</span>
                 </div>
 
-                <div class="flex flex-col w-1/3 gap-5">
+                <div class="flex flex-col md:w-1/3 gap-5 mt-5 md:mt-0">
                     <button class="bg-[#FF9549] rounded-lg py-3 hover:bg-[#FE8630] transition-all duration-500 cursor-pointer">Get Offer <i class="fa-solid fa-angle-right"></i></button>
                     <button class="rounded-lg py-3 border border-[#FF9549] text-white hover:bg-[#252C2C] transition-all duration-500 cursor-pointer">Test Drive <i class="fa-solid fa-angle-right text-white"></i></button>
                 </div>
@@ -376,8 +393,8 @@
     </section>
 
                                             <!-- gift -->
-    <section class="p-20 flex gap-5 items-center">
-        <img src="assets/images/image 290.png" alt="gift" class="w-1/2">
+    <section class="md:p-20 p-5 flex gap-5 items-center flex-col md:flex-row">
+        <img src="assets/images/image 290.png" alt="gift" class="md:w-1/2">
         <div class="flex flex-col items-start gap-5">
             <h2 class="text-white text-4xl font-bold">EXCHANGE BY TRADE-IN <br class="hidden md:block"> ON FAVORABLE TERMS</h2>
             <button class="bg-[#FF9549] rounded-lg py-3 px-5 hover:bg-[#FE8630] transition-all duration-500 cursor-pointer">Request a call<i class="fa-solid fa-angle-right"></i></button>
@@ -385,12 +402,13 @@
     </section>
 
     <section class="relative">
-        <img src="assets/images/image-281.png" alt="">
-        <div class="absolute inset-y-0 flex flex-col items-start justify-center left-1/5">
-            <h4 class="text-3xl font-bold text-white">APPLY FOR A LOAN</h4>
+        <img src="assets/images/image-281.png" alt="" class="hidden md:block">
+        <img src="assets/images/image 281.png" alt="" class="w-full block md:hidden">
+        <div class="absolute inset-y-0 flex flex-col items-start justify-center left-5 md:left-1/5">
+            <h4 class="text-4xl md:text-3xl font-bold text-white">APPLY FOR A LOAN</h4>
             <p class="text-white">and get approval in 1 day!</p>
 
-            <div class="flex items-baseline-last gap-3">
+            <div class="flex md:items-baseline-last gap-3 flex-col md:flex-row w-full md:w-auto">
                 <div class="flex flex-col mb-4 text-white">
                     <label class="text-sm mt-5 text-[#939697]">Phone</label>
                     <input type="tel" class=" bg-[#1C2121] border border-white w-full py-3 rounded-lg px-4 text-sm" placeholder="+7 (___) ___-__-__">
@@ -407,13 +425,13 @@
     </section>
 
                                             <!-- map -->
-    <section class="flex flex-col items-center p-20 w-full">
-        <div class="w-full bg-[#1C2121] rounded-lg p-7 flex justify-between">
+    <section class="flex flex-col items-center p-5 md:p-20 w-full">
+        <div class="w-full bg-[#1C2121] rounded-lg p-7 flex justify-between flex-col md:flex-row">
             <div class="flex flex-col gap-10 items-start">
                 <h5 class="text-white text-3xl font-bold">Individual offer <br>for corporate clients</h5>
                 <button class="bg-[#FF9549] rounded-lg py-3 px-5 hover:bg-[#FE8630] transition-all duration-500 cursor-pointer">Submit Application <i class="fa-solid fa-angle-right"></i></button>
             </div>
-            <div class="flex items-center gap-5">
+            <div class="flex items-center gap-5 mt-5 md:mt-0">
                 <img src="assets/images/image 295.png" alt="avatar">
                 <div>
                     <h6 class="text-white text-lg font-bold">Tatiana Sannikova</h6>
@@ -423,9 +441,10 @@
         </div>
 
         <div class="w-full mt-10 relative">
-            <img src="assets/images/image 289 (2).png" alt="map">
+            <img src="assets/images/image 289 (2).png" alt="map" class="hidden md:block">
+            <img src="assets/images/image 270.png" alt="map" class="block md:hidden w-full">
             <img src="assets/images/vtnrf.png" alt="location" class="w-[4%] absolute left-[48%] top-1/4">
-            <div class="absolute bg-[#1C2121] rounded-lg p-5 bottom-5 left-5 w-calc-100%-40px flex justify-between items-stretch">
+            <div class="md:absolute bg-[#1C2121] rounded-lg p-5 md:bottom-5 md:left-5 ml-5 md:ml-0 w-calc-100%-40px flex justify-between items-stretch flex-col md:flex-row gap-5 md:gap-0">
                 <div class="flex flex-col justify-between">
                     <span class="text-[#939697] text-sm">Address</span>
                     <p class="text-white text-xl">Yaroslavskoe Highway, property 2B,<br> building 3 (MKAD, 95 km)</p>
@@ -461,10 +480,10 @@
         </details>
     </section>
 
-    <hr class="text-[#939697] mx-20 my-10">
+    <hr class="text-[#939697] md:mx-20 mx-5 my-10">
 
                                         <!-- footer info -->
-    <section class="px-20 flex justify-between">
+    <section class="md:px-20 p-5 flex justify-between flex-col md:flex-row">
         <div class="flex flex-col gap-10">
             <div>
                 <h6 class="text-white font-bold">AVTORUS TANK Losiny Ostrov</h6>
@@ -481,8 +500,8 @@
             </div>
         </div>
 
-        <div dir="rtl" class="flex flex-col gap-7">
-            <div class="flex gap-5">
+        <div dir="rtl" class="flex flex-col gap-7 mt-5 md:mt-0">
+            <div class="flex gap-5 flex-col md:flex-row">
                 <button class="bg-[#FF9549] py-2 px-3 rounded-lg hover:bg-[#FE8630] transition-all duration-500 cursor-pointer">Request a callback <i class="fa-solid fa-phone"></i></button>
                 <div>
                     <p class="text-white text-lg">999-99-99 (999) +7</p>
@@ -497,9 +516,9 @@
         </div>
     </section>
 
-    <hr class="text-[#939697] mx-20 mt-10">
+    <hr class="text-[#939697] md:mx-20 mx-5 mt-10">
 
-    <footer class="px-20 py-6 flex justify-between text-[#939697]">
+    <footer class="md:px-20 p-5 py-6 flex justify-between text-[#939697] flex-col">
         <p>&copy; 2024, AVTORUS TANK</p>
         <div class="flex gap-10">
             <p>Legal information</p>
