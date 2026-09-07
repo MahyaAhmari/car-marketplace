@@ -4,4 +4,7 @@
     .vertical-line {
         transform: rotate(90deg);
     }
+    .w-calc-100\%\-40px {
+        width: calc(100% - 40px);
+    }
 }
